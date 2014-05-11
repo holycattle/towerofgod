@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: c841da53b15fd4c658d42c355ccf3608
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: castle_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 113
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 96
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 96
+        width: 13
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 113
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 113
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 96
+        width: 13
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 96
+        width: 18
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 65
+        width: 26
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 138
+        width: 96
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 65
+        width: 28
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 64
+        width: 12
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 94
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 50
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 43
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 40
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 33
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 28
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 10
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 10
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 14
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 8
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 14
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: castle_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
