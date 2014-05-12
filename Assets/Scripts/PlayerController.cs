@@ -7,34 +7,39 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 	private const float MAX_SPEED = 0.75f;
-	private const float JUMPING_FORCE = 20f;
+	private const float JUMPING_FORCE = 1500f;
+	private const float MOVE_FORCE = 0.25f;
 	private bool facingRight;
+	private bool jumping;
 	
 	Animator animator;
 	// Use this for initialization
 	void Start() {
 		animator = this.GetComponent<Animator>();
 		facingRight = true;
+		jumping = false;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate() {
-		float d = Input.GetAxis("Horizontal");
-		/*if(Input.GetButtonDown("Jump")) {
-			//TODO: check if player is on the ground
-			rigidbody2D.AddForce(new Vector2(0f, JUMPING_FORCE));
-			Debug.Log(rigidbody2D.velocity.y);
-		}*/
+		float direction = Input.GetAxis("Horizontal");
+		Debug.Log(direction);
+		animator.SetFloat("Speed", Mathf.Abs(direction));
 
-		animator.SetFloat("Speed", Mathf.Abs(d));
-		//animator.SetFloat("verticalVelocity", rigidbody2D.velocity.y);
-		
-		if (d > 0 && !facingRight) {
+		if(Input.GetButtonDown("Jump") && !jumping) {
+			//TODO: check if player is on the ground
+			jumping = true;
+			animator.SetTrigger("Jump");
+			rigidbody2D.AddForce(new Vector2(0f, JUMPING_FORCE));
+			jumping = false;
+		}
+
+		if (direction > 0 && !facingRight) {
 			Flip();
-		} else if (d < 0 && facingRight) {
+		} else if (direction < 0 && facingRight) {
 			Flip();
 		}
-		transform.Translate(new Vector3(Time.fixedDeltaTime * MAX_SPEED * d, 0, 0));
+		transform.Translate(new Vector3(Time.fixedDeltaTime * MAX_SPEED * direction, 0, 0));
 	}
 	
 	void Flip() {
