@@ -1,0 +1,40 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Ladder : MonoBehaviour {
+	private float climbingSpeed = 1.75f;
+	private bool withinLadder = false;
+	private GameObject player;
+	// Use this for initialization
+	void Start () {
+		
+	}
+
+	void FixedUpdate() {
+		if(withinLadder) {
+			float direction = Input.GetAxis("Vertical");
+			if(Mathf.Abs(direction) > 0.1f) {
+				player.rigidbody2D.gravityScale = 0;
+				Debug.Log("Should be climbing");	
+				player.transform.Translate(new Vector2(0, Time.fixedDeltaTime * climbingSpeed * direction));
+			}
+			if(Input.GetButtonDown("Jump")) {
+				player.rigidbody2D.gravityScale = 9.81f;
+			}
+		}
+	}
+
+	void OnTriggerStay2D(Collider2D other) {
+		if(other.gameObject.name == "Player") {
+			withinLadder = true;
+			player = other.gameObject;
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D other) {
+		if(other.gameObject.name == "Player") {
+			withinLadder = false;
+			player.rigidbody2D.gravityScale = 9.81f;
+		}
+	}
+}
