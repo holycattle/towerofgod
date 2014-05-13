@@ -7,7 +7,8 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 	private const float MAX_SPEED = 1000f;
-	private const float JUMPING_FORCE = 1750f;
+	private const float JUMPING_FORCE = 500f;
+	private const float MAX_JUMPING_FORCE = 20000f;
 	private const float MOVE_FORCE = 100f;
 	private bool facingRight;
 	private bool jumping;
@@ -31,11 +32,12 @@ public class PlayerController : MonoBehaviour {
 		animator.SetFloat("Speed", Mathf.Abs(direction));
 
 		//if velocity hasn't maxed out yet, keep adding force
-		if(Mathf.Abs(direction) > 0) {
+		if(Mathf.Abs(direction) > 0 && rigidbody2D.velocity.x < MAX_SPEED) {
 			rigidbody2D.AddForce(Vector2.right * direction * MOVE_FORCE);
 		}
-		//if velocity exceeds max, snap velocity to max speed
-		if(rigidbody2D.velocity.x > MAX_SPEED) {
+
+		if(rigidbody2D.velocity.x >= MAX_SPEED) {
+			Debug.Log("maxed");
 			rigidbody2D.velocity = new Vector2(Mathf.Sign(direction) * MAX_SPEED, rigidbody2D.velocity.y);
 		}
 
@@ -44,10 +46,12 @@ public class PlayerController : MonoBehaviour {
 			animator.SetTrigger("Jump");
 			Debug.Log("Jump!");
 
-			rigidbody2D.AddForce(new Vector2(rigidbody2D.velocity.x, JUMPING_FORCE));
-			//rigidbody2D.velocity.Set(rigidbody2D.velocity.x, 100f);
+			//rigidbody2D.AddForce(new Vector2(rigidbody2D.velocity.x, JUMPING_FORCE));
+			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 35f);
 			Debug.Log(rigidbody2D.velocity);
-			jumping = false;
+			/*if(rigidbody2D.velocity.y >= MAX_JUMPING_FORCE) {
+				jumping = false;
+			}*/
 		}
 
 		if (direction > 0 && !facingRight) {
@@ -56,7 +60,7 @@ public class PlayerController : MonoBehaviour {
 			Flip();
 		}
 
-		//transform.Translate(new Vector2(Time.fixedDeltaTime * MAX_SPEED * direction, 0));
+		//transform.Translate(new Vector2(Time.fixedDeltaTime * 0.75f * direction, 0));
 	}
 	
 	void Flip() {
