@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour {
 	private GameObject fountainRoom;
 	private GameObject trapRoom;
 
-	private float currentX = 0f;
+	public float currentX = 0f;
 	private float currentY = 0f;
 	
 	void Awake() {
@@ -30,17 +30,17 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log(entryRoom);
-		currentRoom = (GameObject)Instantiate(entryRoom, new Vector2(currentX, currentY), Quaternion.identity);
-		//currentRoom.name = "EntryRoom";
-		if(currentX >= 500f) {
-			currentX = 0f;
-			currentY += 100f;
-		} else {
-			currentX += 100f;
-		}
+		currentRoom = GenerateEntryRoom();
 		//Debug.Log(GameController.Instance.currentRoom.transform.FindChild("4-tile-piece"));
+		//MainCameraController.Instance.gameObject.SetActive(false);
 	}
-	
+
+	public GameObject GenerateEntryRoom() {
+		GameObject newRoom = (GameObject)Instantiate(entryRoom, new Vector2(currentX, currentY), Quaternion.identity);
+		currentX += newRoom.GetComponent<Room>().area.x + 1;
+		return newRoom;
+	}
+
 	public GameObject GenerateNewRoom(GameObject curr) {
 		string newName = "";
 		/*float p = Random.Range(0f, 1f);
@@ -88,13 +88,7 @@ public class GameController : MonoBehaviour {
 		GameObject newRoom = (GameObject)Instantiate(n, new Vector2(currentX, currentY), Quaternion.identity);
 		//newRoom.name = newName;
 
-		//update x, y
-		if(currentX >= 500f) {
-			currentX = 0f;
-			currentY += 100f;
-		} else {
-			currentX += 100f;
-		}
+		currentX += newRoom.GetComponent<Room>().area.x + 1;
 
 		return newRoom;
 	}
