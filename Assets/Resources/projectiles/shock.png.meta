@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: d6a5d59425eb944a699a92eda50ca7a5
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: shock_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 472
+        width: 62
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 472
+        width: 63
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 401
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_3
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 402
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 401
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 401
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_6
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 334
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_7
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 334
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_8
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 333
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_9
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 333
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 275
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 274
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 272
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 273
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 63
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 216
+        width: 192
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 145
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_17
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 148
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 146
+        width: 50
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_19
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 145
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_20
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 77
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_21
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 80
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_22
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 78
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_23
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 77
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_24
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 16
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 18
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_26
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 18
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_27
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 16
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_28
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 472
+        width: 60
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: shock_29
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 473
+        width: 63
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
