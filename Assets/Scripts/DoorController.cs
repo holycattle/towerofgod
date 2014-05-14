@@ -16,12 +16,12 @@ public class DoorController : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
-		Debug.Log("oops!");
 		if(other.transform.tag == "Player") {
 			if(Input.GetButtonUp("Interact")) {
-				other.transform.position = nextRoom.transform.FindChild("room_entrance").FindChild("door").position;
 				GameController.Instance.currentRoom = nextRoom;
+				Debug.Log("next room: " + nextRoom);
 				MainCameraController.Instance.updateCamera();
+				other.transform.position = nextRoomDoor.transform.position;
 			}
 		}
 	}
