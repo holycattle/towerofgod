@@ -1,0 +1,1084 @@
+fileFormatVersion: 2
+guid: a0a92acbf6b5e48ffac54e5ba4668807
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: mon2_sprite_base_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 451
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 451
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 451
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 451
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 475
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 475
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 476
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_7
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 476
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_8
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 476
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_9
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 475
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_10
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 387
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 387
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_12
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 387
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_13
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 387
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_14
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 410
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_15
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 411
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_16
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 410
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_17
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 411
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_18
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 411
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_19
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 411
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_20
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 410
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_21
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 323
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 323
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_23
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 323
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_24
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 323
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 347
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_26
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 348
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_27
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 348
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_28
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 348
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_29
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 347
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_30
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 259
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 259
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_32
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 293
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_33
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 259
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_34
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 292
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_35
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 259
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_36
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 283
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_37
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 278
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_38
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 278
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_39
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 272
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_40
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 224
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_42
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 225
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_43
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 225
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_44
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 224
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_45
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 131
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_46
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 130
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_47
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 130
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_48
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 131
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_49
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 133
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_50
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 145
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_51
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 145
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_52
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 84
+        width: 5
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_53
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 97
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_54
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 98
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_55
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 98
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_56
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_57
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 97
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_58
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_59
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 98
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_60
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 97
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_61
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 98
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_62
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_63
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 98
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_64
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_65
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 98
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_66
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 97
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_67
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 98
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_68
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 97
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_69
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 98
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_70
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 98
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_71
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_72
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_73
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_74
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 98
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_75
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_76
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 97
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_77
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_78
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 98
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_79
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 98
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_80
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 98
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_81
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 98
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_82
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 98
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_83
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 98
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_84
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 98
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_85
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 84
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_86
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 69
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_87
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 84
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_88
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 84
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_89
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 84
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_90
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 84
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_91
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 83
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_92
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 84
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_93
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 84
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_94
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 83
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_95
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 84
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_96
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 84
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_97
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 84
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_98
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 69
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_99
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 69
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_100
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 69
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_101
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 69
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_102
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 69
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_103
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 69
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_104
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 69
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_105
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 69
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_106
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 69
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_107
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 55
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_108
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 55
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_109
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 55
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_110
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 54
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_111
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 55
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_112
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 55
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_113
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 55
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: mon2_sprite_base_114
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 55
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
