@@ -41,9 +41,9 @@ public class MainCameraController : MonoBehaviour {
 		Debug.Log("area " + r.name);
 		//min and max of camera are relative to the start and end points of each room
 		//MIN_X = GameController.Instance.currentRoom.transform.position.x + r.area.x/4.7f;
-		MIN_X = GameController.Instance.currentRoom.transform.position.x + 2.45f;
-		MAX_X = GameController.Instance.currentRoom.transform.position.x + 8.79f;
-		//MAX_X = GameController.Instance.currentRoom.transform.position.x + r.area.x/1.31f;
+		MIN_X = GameController.Instance.currentRoom.transform.position.x + 3.00f;
+		//MAX_X = GameController.Instance.currentRoom.transform.position.x + 8.79f;
+		MAX_X = GameController.Instance.currentRoom.transform.position.x + r.area.x - 3.3f;
 		//MIN_Y = GameController.Instance.currentRoom.transform.position.y + r.area.y/2.9f;
 		MIN_Y = GameController.Instance.currentRoom.transform.position.y + 1.765f;
 		MAX_Y = GameController.Instance.currentRoom.transform.position.y + 3.01f;
