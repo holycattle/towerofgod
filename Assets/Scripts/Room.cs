@@ -36,6 +36,7 @@ public class Room : MonoBehaviour {
 				if(!GameController.Instance.isExitPresent) {
 					Debug.Log("creating!");
 					d.nextRoom = GameController.Instance.GenerateNewRoom(gameObject);
+					//point next room's entrance to this room
 					d.nextRoom.transform.FindChild("room_entrance").GetComponentInChildren<DoorController>().nextRoom = gameObject;
 					d.nextRoomDoor = d.nextRoom.transform.FindChild("room_entrance").FindChild("door").gameObject;
 
@@ -48,10 +49,10 @@ public class Room : MonoBehaviour {
 					Debug.Log(d);
 				} else {
 					Debug.Log("stop creating rooms");
-
+					//d.nextRoom = GameController.Instance.GenerateDeadEnd();
+					//d.nextRoomDoor = 
+					
 				}
-
-			} else if(t.name == "room_entrance") {
 
 			} else if(t.name == "level_exit") {
 				//clear scene
