@@ -16,7 +16,8 @@ public class Ladder : MonoBehaviour {
 			if(Mathf.Abs(direction) > 0.1f) {
 				player.rigidbody2D.gravityScale = 0;
 				Debug.Log("Should be climbing");	
-				player.transform.Translate(new Vector2(0, Time.fixedDeltaTime * climbingSpeed * direction));
+				//player.transform.Translate(new Vector2(0, Time.fixedDeltaTime * climbingSpeed * direction));
+				player.transform.rigidbody2D.velocity = new Vector2(player.transform.rigidbody2D.velocity.x, climbingSpeed * direction);
 			}
 			if(Input.GetButtonDown("Jump")) {
 				player.rigidbody2D.gravityScale = 9.81f;
