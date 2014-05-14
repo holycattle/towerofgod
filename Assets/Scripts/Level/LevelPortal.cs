@@ -40,6 +40,8 @@ public class LevelPortal : MonoBehaviour {
 				//update camera
 				MainCameraController.Instance.transform.position = new Vector3(-0.02448663f, 0.3689732f, MainCameraController.Instance.transform.position.z);
 				MainCameraController.Instance.updateCamera();
+
+				GameController.Instance.currentFloor++;
 				//MainCameraController.Instance.transform.position = new Vector3(4.4f, 1.758484f, MainCameraController.Instance.transform.position.z);
 			}
 		}

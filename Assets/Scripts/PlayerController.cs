@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour {
 	private const float MOVE_FORCE = 100f;
 	private bool facingRight;
 	private bool jumping;
+	private bool attacking;
+
+	public float health;
+	public float attack;
 
 	private static PlayerController _instance;
 
@@ -30,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 	void Update() {
 		jumping = Input.GetButtonDown("Jump");
 	}
-	
+
 	void FixedUpdate() {
 		float direction = Input.GetAxis("Horizontal");
 		//Debug.Log(direction);

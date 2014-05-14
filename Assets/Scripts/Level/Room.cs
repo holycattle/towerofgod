@@ -3,10 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Room : MonoBehaviour {
-	private GameObject enemy;
-	private int enemyCount;
-
 	private static Dictionary<string, Vector2> roomAreas = new Dictionary<string, Vector2>();
+	//TODO: spawnEnergy should also be determined by the room area-- obviously, smaller rooms should have less enemies
+	public float spawnEnergy;
 
 	//divergent room: 36x16
 	//entry room: 36x16
@@ -25,12 +24,16 @@ public class Room : MonoBehaviour {
 			roomAreas.Add("SmallTerminalRoom(Clone)", new Vector2(20*.32f, 16*.32f));
 			roomAreas.Add("LargeTerminalRoom(Clone)", new Vector2(32*.32f, 16*.32f));
 		}
+
 		Debug.Log(transform.name);
 		area = roomAreas[transform.name];
+		spawnEnergy = Random.Range((GameController.Instance.currentFloor * 2f), (GameController.Instance.currentFloor * 4f));
+		Debug.Log("ener: " + spawnEnergy);
 	}
 
 	// Use this for initialization
 	void Start () {
+
 		foreach(Transform t in transform) {
 			if(t.name == "room_exit") {
 				DoorController d = t.gameObject.GetComponentInChildren<DoorController>();

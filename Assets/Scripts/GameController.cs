@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class GameController : MonoBehaviour {
-	private int currentFloor = 1;
+	//for scoring and difficulty multiplier
+	public int currentFloor = 1;
 	public GameObject currentRoom;
 	public bool isExitPresent = false;
 
@@ -38,6 +39,10 @@ public class GameController : MonoBehaviour {
 		currentRoom = GenerateEntryRoom();
 		//Debug.Log(GameController.Instance.currentRoom.transform.FindChild("4-tile-piece"));
 		//MainCameraController.Instance.gameObject.SetActive(false);
+	}
+
+	public Room CurrentRoomController {
+		get { return currentRoom.GetComponent<Room>(); }
 	}
 
 	public GameObject GenerateEntryRoom() {
