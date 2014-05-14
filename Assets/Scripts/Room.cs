@@ -22,6 +22,8 @@ public class Room : MonoBehaviour {
 			roomAreas.Add("ExitRoom(Clone)", new Vector2(24*.32f, 16*.32f));
 			roomAreas.Add("FountainRoom(Clone)", new Vector2(20*.32f, 16*.32f));
 			roomAreas.Add("TrapRoom(Clone)", new Vector2(24*.32f, 16*.32f));
+			roomAreas.Add("SmallTerminalRoom(Clone)", new Vector2(20*.32f, 16*.32f));
+			roomAreas.Add("LargeTerminalRoom(Clone)", new Vector2(32*.32f, 16*.32f));
 		}
 		Debug.Log(transform.name);
 		area = roomAreas[transform.name];
@@ -48,19 +50,22 @@ public class Room : MonoBehaviour {
 
 					Debug.Log(d);
 				} else {
-					Debug.Log("stop creating rooms");
-					//d.nextRoom = GameController.Instance.GenerateDeadEnd();
-					//d.nextRoomDoor = 
+					//if there are more exits even though the exit is already present, create terminal rooms
+					d.nextRoom = GameController.Instance.GenerateTerminalRoom();
+					//point next room's entrance to this room
+					d.nextRoom.transform.FindChild("room_entrance").GetComponentInChildren<DoorController>().nextRoom = gameObject;
+					d.nextRoomDoor = d.nextRoom.transform.FindChild("room_entrance").FindChild("door").gameObject;
 					
+					//point nextRoomEntrance to this room
+					GameObject nextRoomEntranceDoor = d.nextRoom.transform.FindChild("room_entrance").FindChild("door").gameObject;
+					DoorController dc = nextRoomEntranceDoor.GetComponent<DoorController>();
+					dc.nextRoom = gameObject;
+					dc.nextRoomDoor = transform.FindChild("room_exit").FindChild("door").gameObject;
 				}
-
-			} else if(t.name == "level_exit") {
-				//clear scene
-				//reset params like isExitPresent
 			}
 		}
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	

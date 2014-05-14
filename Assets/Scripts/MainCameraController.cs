@@ -49,6 +49,9 @@ public class MainCameraController : MonoBehaviour {
 		MAX_Y = GameController.Instance.currentRoom.transform.position.y + 3.01f;
 		//MAX_Y = GameController.Instance.currentRoom.transform.position.y + r.area.y/1.7f;
 
+		initialX = player.transform.position.x;
+		initialY = player.transform.position.y;
+
 		transform.position = new Vector3(MIN_X, MIN_Y, -10);
 
 		Debug.Log("new pos: " + transform.position);

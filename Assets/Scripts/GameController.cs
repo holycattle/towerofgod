@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour {
 	private GameObject exitRoom;
 	private GameObject fountainRoom;
 	private GameObject trapRoom;
+	private GameObject smallTerminalRoom;
+	private GameObject largeTerminalRoom;
 
 	public float currentX = 0f;
 	private float currentY = 0f;
@@ -23,6 +25,9 @@ public class GameController : MonoBehaviour {
 		fountainRoom = (GameObject)Resources.Load("prefabs/rooms/FountainRoom", typeof(GameObject)); //1/20
 		trapRoom = (GameObject)Resources.Load("prefabs/rooms/TrapRoom", typeof(GameObject)); //8/20
 		//libraryRoom
+
+		smallTerminalRoom = (GameObject)Resources.Load("prefabs/rooms/SmallTerminalRoom", typeof(GameObject));
+		largeTerminalRoom = (GameObject)Resources.Load("prefabs/rooms/LargeTerminalRoom", typeof(GameObject));
 
 		_instance = this;
 	}
@@ -37,6 +42,22 @@ public class GameController : MonoBehaviour {
 
 	public GameObject GenerateEntryRoom() {
 		GameObject newRoom = (GameObject)Instantiate(entryRoom, new Vector2(currentX, currentY), Quaternion.identity);
+		currentX += newRoom.GetComponent<Room>().area.x + 1;
+		return newRoom;
+	}
+
+	public GameObject GenerateTerminalRoom() {
+		//int p = Random.Range(0, 1);
+		GameObject n = null;
+		switch(Random.Range(0, 2)) {
+			case 0:
+				n = smallTerminalRoom;
+				break;
+			case 1:
+				n = largeTerminalRoom;
+				break;
+		}
+		GameObject newRoom = (GameObject)Instantiate(n, new Vector2(currentX, currentY), Quaternion.identity);
 		currentX += newRoom.GetComponent<Room>().area.x + 1;
 		return newRoom;
 	}
