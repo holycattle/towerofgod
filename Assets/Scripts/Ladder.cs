@@ -35,7 +35,7 @@ public class Ladder : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D other) {
 		if(other.gameObject.name == "Player") {
 			withinLadder = false;
-			player.rigidbody2D.gravityScale = 9.81f;
+			other.gameObject.rigidbody2D.gravityScale = 9.81f;
 		}
 	}
 }
