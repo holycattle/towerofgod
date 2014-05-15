@@ -5,7 +5,10 @@ using System.Collections.Generic;
 public class Room : MonoBehaviour {
 	private static Dictionary<string, Vector2> roomAreas = new Dictionary<string, Vector2>();
 	//TODO: spawnEnergy should also be determined by the room area-- obviously, smaller rooms should have less enemies
+	public float roomCost;
 	public float spawnEnergy;
+
+	public DoorController[] doors;
 
 	//divergent room: 36x16
 	//entry room: 36x16
@@ -31,8 +34,21 @@ public class Room : MonoBehaviour {
 		Debug.Log("ener: " + spawnEnergy);
 	}
 
+	public void Lock(bool l) {
+		foreach(DoorController d in doors) {
+			d.isLocked = l;
+		}
+	}
+
+	public bool Cleared {
+		get {
+			return transform.GetComponentsInChildren<Enemy>().Length > 0;
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
+		doors = transform.GetComponentsInChildren<DoorController>();
 
 		foreach(Transform t in transform) {
 			if(t.name == "room_exit") {
@@ -67,10 +83,5 @@ public class Room : MonoBehaviour {
 				}
 			}
 		}
-	}
-
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
