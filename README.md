@@ -1,7 +1,7 @@
 towerofgod
 ==========
 
-A room-base roguelight game with procedurally generated levels. Survive and climb the tower as high as you can. Each floor/level gets harder with more rooms and more enemies.
+A room-based roguelight game with procedurally generated levels. Survive and climb the tower as high as you can. Each floor/level gets harder with more rooms and more enemies.
 
 #### Controls
 - left and right arrow keys to move around
