@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class LevelPortal : MonoBehaviour {
+	public bool isLocked = false;
+
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +17,7 @@ public class LevelPortal : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other) {
 		if(other.transform.tag == "Player") {
-			if(Input.GetButtonUp("Interact")) {
+			if(Input.GetButtonUp("Interact") && !isLocked) {
 				//disable camera and player
 				MainCameraController.Instance.gameObject.SetActive(false);
 				PlayerController.Instance.gameObject.SetActive(false);

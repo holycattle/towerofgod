@@ -9,6 +9,7 @@ public class Room : MonoBehaviour {
 	public float spawnEnergy;
 
 	public DoorController[] doors;
+	public LevelPortal[] levelPortals;
 
 	//divergent room: 36x16
 	//entry room: 36x16
@@ -38,6 +39,9 @@ public class Room : MonoBehaviour {
 		foreach(DoorController d in doors) {
 			d.isLocked = l;
 		}
+		foreach(LevelPortal lp in levelPortals) {
+			lp.isLocked = l;
+		}
 	}
 
 	public bool Cleared {
@@ -49,6 +53,7 @@ public class Room : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		doors = transform.GetComponentsInChildren<DoorController>();
+		levelPortals = transform.GetComponentsInChildren<LevelPortal>();
 
 		foreach(Transform t in transform) {
 			if(t.name == "room_exit") {
