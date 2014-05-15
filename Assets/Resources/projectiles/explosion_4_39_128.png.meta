@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 38732afc13be74b26a3b9579b8ee9503
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: explosion_4_39_128_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 951
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 950
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_2
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 949
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_3
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 947
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_4
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 946
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_5
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 945
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_6
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 943
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_7
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 942
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 812
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_9
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 811
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_10
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 810
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_11
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 808
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_12
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 806
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_13
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 804
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_14
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 803
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_15
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 801
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_16
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 671
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 670
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_18
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 668
+        width: 73
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_19
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 667
+        width: 75
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_20
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 665
+        width: 77
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_21
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 664
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_22
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 662
+        width: 84
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_23
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 661
+        width: 85
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_24
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 532
+        width: 89
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_25
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 531
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_26
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 531
+        width: 131
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_27
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 534
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_28
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 529
+        width: 49
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_29
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 578
+        width: 81
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_30
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 533
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_31
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 546
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_32
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 409
+        width: 78
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_33
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 483
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_34
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 403
+        width: 89
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_35
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 404
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_36
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 403
+        width: 95
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_37
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 403
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_38
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 471
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_39
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 417
+        width: 43
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_40
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 447
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_41
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 436
+        width: 10
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_42
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 447
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_43
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 474
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_44
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 435
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_45
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 469
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_46
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 458
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_47
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 467
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_48
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 440
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_49
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 436
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_50
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 478
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_51
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 425
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_52
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 449
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: explosion_4_39_128_53
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 429
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
