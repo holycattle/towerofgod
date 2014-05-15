@@ -49,7 +49,7 @@ public class Room : MonoBehaviour {
 					GameObject nextRoomEntranceDoor = d.nextRoom.transform.FindChild("room_entrance").FindChild("door").gameObject;
 					DoorController dc = nextRoomEntranceDoor.GetComponent<DoorController>();
 					dc.nextRoom = gameObject;
-					dc.nextRoomDoor = transform.FindChild("room_exit").FindChild("door").gameObject;
+					dc.nextRoomDoor = d.gameObject;
 
 					Debug.Log(d);
 				} else {
@@ -63,7 +63,7 @@ public class Room : MonoBehaviour {
 					GameObject nextRoomEntranceDoor = d.nextRoom.transform.FindChild("room_entrance").FindChild("door").gameObject;
 					DoorController dc = nextRoomEntranceDoor.GetComponent<DoorController>();
 					dc.nextRoom = gameObject;
-					dc.nextRoomDoor = transform.FindChild("room_exit").FindChild("door").gameObject;
+					dc.nextRoomDoor = d.gameObject;
 				}
 			}
 		}
