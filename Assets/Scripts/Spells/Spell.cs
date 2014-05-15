@@ -6,6 +6,7 @@ using System.Collections;
 public class Spell : MonoBehaviour {
 	public float damage;
 	public int direction = 1;
+	public float speed;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +15,7 @@ public class Spell : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		transform.Translate(new Vector2(Time.fixedDeltaTime * 2f * direction, 0));
+		transform.Translate(new Vector2(Time.fixedDeltaTime * speed * direction, 0));
 		float x = MainCameraController.Instance.camera.WorldToScreenPoint(this.transform.position).x;
 		if(x > MainCameraController.Instance.transform.position.x + MainCameraController.Instance.camera.pixelWidth || x < MainCameraController.Instance.transform.position.x) {
 			//HACK!!

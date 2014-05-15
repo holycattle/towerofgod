@@ -6,7 +6,7 @@ using UnityEngine;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-	private const float COOLDOWN = 0.2f;
+	private const float COOLDOWN = 0.4f;
 
 	private const float MAX_SPEED = 2f;
 	private const float JUMPING_FORCE = 500f;
@@ -88,8 +88,10 @@ public class PlayerController : MonoBehaviour {
 			//ProjectilePool.Instance.GetLightning(this.transform.FindChild("Projectiles"), facingRight? 1:-1);
 			Transform tmp = transform.FindChild("Projectiles");
 			GameObject g = (GameObject)Instantiate(lightningPrefab, new Vector3(tmp.position.x, tmp.position.y, 0), Quaternion.identity);
-			g.GetComponent<Spell>().damage = attack;
-			g.GetComponent<Spell>().direction = facingRight? 1:-1;
+			Spell spell = g.GetComponent<Spell>();
+			spell.damage = attack;
+			spell.speed = 3f;
+			spell.direction = facingRight? 1:-1;
 		}
 
 		//attack cooldown

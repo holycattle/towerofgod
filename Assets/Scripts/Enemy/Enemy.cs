@@ -64,8 +64,10 @@ public class Enemy : MonoBehaviour {
 				Debug.Log("fire!!!!: "+transform.FindChild("Projectiles"));
 
 				GameObject g = (GameObject)Instantiate(fireballPrefab, new Vector3(tmp.position.x, tmp.position.y, 0), Quaternion.identity);
-				g.GetComponent<Spell>().direction = gameObject.GetComponent<Flying>().direction;
-				g.GetComponent<Spell>().damage = damage;
+				Spell spell = g.GetComponent<Spell>();
+				spell.direction = gameObject.GetComponent<Flying>().direction;
+				spell.damage = damage;
+				spell.speed = 2.21f;
 				//ProjectilePool.Instance.GetFireball(transform.FindChild("Projectiles"), gameObject.GetComponent<Flying>().direction);
 				//Debug.Break();
 			}
