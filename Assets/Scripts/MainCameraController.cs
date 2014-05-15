@@ -12,6 +12,8 @@ public class MainCameraController : MonoBehaviour {
 	public float MIN_Y;
 	public float MAX_Y;
 
+	private bool updating = false;
+
 	private static MainCameraController _instance;
 
 	float initialX;
@@ -37,6 +39,7 @@ public class MainCameraController : MonoBehaviour {
 	}
 
 	public void updateCamera() {
+		updating = true;
 		Room r = GameController.Instance.currentRoom.GetComponent<Room>();
 		Debug.Log("area " + r.name);
 		//min and max of camera are relative to the start and end points of each room
@@ -53,25 +56,27 @@ public class MainCameraController : MonoBehaviour {
 		initialY = player.transform.position.y;
 
 		transform.position = new Vector3(MIN_X, MIN_Y, -10);
-
+		updating = false;
 		Debug.Log("new pos: " + transform.position);
 	}
 
 	void Update () {
-		float deltaX = player.transform.position.x - initialX;
-		float deltaY = player.transform.position.y - initialY;
-		if(Mathf.Abs(deltaX) > X_THRESHOLD) {
-			newX = Mathf.Lerp(transform.position.x, player.transform.position.x, 8f * Time.deltaTime);
-		}
-		if(Mathf.Abs(deltaY) > Y_THRESHOLD) {
-			newY = Mathf.Lerp(transform.position.y, player.transform.position.y, 8f * Time.deltaTime);
-		}
+		if(!updating) {
+			float deltaX = player.transform.position.x - initialX;
+			float deltaY = player.transform.position.y - initialY;
 
-		//min and max should be relative to player's position and size of room
-		newX = Mathf.Clamp(newX, MIN_X, MAX_X);
-		newY = Mathf.Clamp(newY, MIN_Y, MAX_Y);
-
-		transform.position = new Vector3(newX, newY, transform.position.z);
+			if(Mathf.Abs(deltaX) > X_THRESHOLD) {
+				newX = Mathf.Lerp(transform.position.x, player.transform.position.x, 8f * Time.deltaTime);
+			}
+			if(Mathf.Abs(deltaY) > Y_THRESHOLD) {
+				newY = Mathf.Lerp(transform.position.y, player.transform.position.y, 8f * Time.deltaTime);
+			}
+			//min and max should be relative to player's position and size of room
+			newX = Mathf.Clamp(newX, MIN_X, MAX_X);
+			newY = Mathf.Clamp(newY, MIN_Y, MAX_Y);
+			
+			transform.position = new Vector3(newX, newY, transform.position.z);
+		}
 	}
 
 	public static MainCameraController Instance {

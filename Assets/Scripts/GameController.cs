@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour {
 	private GameObject smallTerminalRoom;
 	private GameObject largeTerminalRoom;
 
+	private float roomSpawnEnergy;
+
 	public float currentX = 0f;
 	private float currentY = 0f;
 	
@@ -33,12 +35,10 @@ public class GameController : MonoBehaviour {
 		_instance = this;
 	}
 	
-	// Use this for initialization
 	void Start () {
 		Debug.Log(entryRoom);
+		roomSpawnEnergy = Random.Range((currentFloor * 3f), (currentFloor * 3.5f));
 		currentRoom = GenerateEntryRoom();
-		//Debug.Log(GameController.Instance.currentRoom.transform.FindChild("4-tile-piece"));
-		//MainCameraController.Instance.gameObject.SetActive(false);
 	}
 
 	public Room CurrentRoomController {
@@ -54,12 +54,21 @@ public class GameController : MonoBehaviour {
 	public GameObject GenerateTerminalRoom() {
 		//int p = Random.Range(0, 1);
 		GameObject n = null;
-		switch(Random.Range(0, 2)) {
+		switch(Random.Range(0, 5)) {
 			case 0:
 				n = smallTerminalRoom;
 				break;
 			case 1:
 				n = largeTerminalRoom;
+				break;
+			case 2:
+				n = fountainRoom;
+				break;
+			case 3:
+				n = fountainRoom;
+				break;
+			case 4:
+				n = fountainRoom;
 				break;
 		}
 		GameObject newRoom = (GameObject)Instantiate(n, new Vector2(currentX, currentY), Quaternion.identity);
@@ -73,44 +82,42 @@ public class GameController : MonoBehaviour {
 		while() {
 
 		}*/
+		//TODO: make this crappy randomizer better later lol
 		GameObject n = curr;
-		while(n.name == curr.name) {
-			switch(Random.Range(0, 5)) {
-			case 0:
-				n = divergentRoom;
-				newName = "DivergentRoom";
-				break;
-			case 1:
-				n = exitRoom;
-				isExitPresent = true;
-				newName = "ExitRoom";
-				Debug.Log("exit is present!");
-				break;
-			/*case 2:
-				n = fountainRoom;
-				newName = "FountainRoom";
-				break;*/
-			case 2:
-				n = trapRoom;
-				newName = "TrapRoom";
-				break;
-			
-			case 3:
-				n = trapRoom;
-				newName = "TrapRoom";
-				break;
-			case 4:
-				n = divergentRoom;
-				newName = "DivergentRoom";
-				break;
-			case 5:
-				n = divergentRoom;
-				newName = "DivergentRoom";
-				break;
+		if(roomSpawnEnergy > 0) {
+			Debug.Log("spawn energy:" + roomSpawnEnergy);
+			while(n.name == curr.name) {
+				switch(Random.Range(0, 5)) {
+				case 0:
+					n = divergentRoom;
+					newName = "DivergentRoom";
+					break;
+				case 1:
+					n = trapRoom;
+					newName = "TrapRoom";
+					break;
+				case 2:
+					n = trapRoom;
+					newName = "TrapRoom";
+					break;
+				case 3:
+					n = divergentRoom;
+					newName = "DivergentRoom";
+					break;
+				case 4:
+					n = trapRoom;
+					newName = "TrapRoom";
+					break;
+				}
 			}
-		
+
+		} else {
+			n = exitRoom;
+			newName = "ExitRoom";
+			isExitPresent = true;
 		}
 
+		roomSpawnEnergy -= n.GetComponent<Room>().roomCost;
 		GameObject newRoom = (GameObject)Instantiate(n, new Vector2(currentX, currentY), Quaternion.identity);
 		//newRoom.name = newName;
 
@@ -119,11 +126,64 @@ public class GameController : MonoBehaviour {
 		return newRoom;
 	}
 
-	// Update is called once per frame
-	void Update () {
-	
+	public void DisableGame() {
+		//disable camera and player
+		MainCameraController.Instance.gameObject.SetActive(false);
+		PlayerController.Instance.gameObject.SetActive(false);
 	}
 
+	public void EnableGame() {
+		//disable camera and player
+		MainCameraController.Instance.gameObject.SetActive(true);
+		PlayerController.Instance.gameObject.SetActive(true);
+	}
+
+	
+	public void GameOver() {
+		//disable camera and player
+		MainCameraController.Instance.gameObject.SetActive(false);
+		PlayerController.Instance.gameObject.SetActive(false);
+		
+		currentRoom = null;
+		
+		DestroyRooms();
+		
+		//reset level variables
+		isExitPresent = false;
+		currentX = 0;
+		
+		GenerateNewLevel();
+		
+		MainCameraController.Instance.gameObject.SetActive(true);
+		
+		PlayerController.Instance.Restart();
+		
+		//update camera
+		MainCameraController.Instance.transform.position = new Vector3(-0.02448663f, 0.3689732f, MainCameraController.Instance.transform.position.z);
+		MainCameraController.Instance.updateCamera();
+
+		PlayerController.Instance.Restart();
+
+		currentFloor = 1;
+	}
+
+	public void GenerateNewLevel() {
+		//reset level variables
+		isExitPresent = false;
+		currentX = 0;
+		roomSpawnEnergy = Random.Range((currentFloor * 3f), (currentFloor * 5f));
+		currentRoom = null;
+		//create new rooms
+		currentRoom = GameController.Instance.GenerateEntryRoom();
+	}
+	
+	public void DestroyRooms() {
+		//destroy rooms
+		foreach(GameObject room in GameObject.FindGameObjectsWithTag("Room")) {
+			Destroy(room);
+		}
+	}
+	
 	private static GameController _instance;
 
 	public static GameController Instance {

@@ -20,23 +20,20 @@ public class LevelPortal : MonoBehaviour {
 				MainCameraController.Instance.gameObject.SetActive(false);
 				PlayerController.Instance.gameObject.SetActive(false);
 
-				//destroy rooms
-				foreach(GameObject room in GameObject.FindGameObjectsWithTag("Room")) {
-					Destroy(room);
-				}
+				GameController.Instance.currentRoom = null;
+
+				GameController.Instance.DestroyRooms();
 
 				//reset level variables
 				GameController.Instance.isExitPresent = false;
 				GameController.Instance.currentX = 0;
 
-				//create new rooms
-				GameController.Instance.currentRoom = GameController.Instance.GenerateEntryRoom();
+				GameController.Instance.GenerateNewLevel();
 
 				MainCameraController.Instance.gameObject.SetActive(true);
 
-				//reset player position
-				PlayerController.Instance.gameObject.SetActive(true);
-				PlayerController.Instance.transform.position = new Vector3(-0.02448663f, 0.3689732f, PlayerController.Instance.transform.position.z);
+				PlayerController.Instance.Restart();
+
 				//update camera
 				MainCameraController.Instance.transform.position = new Vector3(-0.02448663f, 0.3689732f, MainCameraController.Instance.transform.position.z);
 				MainCameraController.Instance.updateCamera();

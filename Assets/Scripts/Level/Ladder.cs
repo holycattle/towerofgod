@@ -23,12 +23,15 @@ public class Ladder : MonoBehaviour {
 				player.rigidbody2D.gravityScale = 9.81f;
 			}
 		}
+
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
 		if(other.gameObject.name == "Player") {
 			withinLadder = true;
 			player = other.gameObject;
+			Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platform"), true);
+			Debug.Log(Physics2D.GetIgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platform")));
 		}
 	}
 
@@ -36,6 +39,8 @@ public class Ladder : MonoBehaviour {
 		if(other.gameObject.name == "Player") {
 			withinLadder = false;
 			other.gameObject.rigidbody2D.gravityScale = 9.81f;
+			Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platform"), false);
+			Debug.Log(Physics2D.GetIgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platform")));
 		}
 	}
 }

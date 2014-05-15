@@ -3,13 +3,21 @@ using System.Collections;
 
 public class Fountain : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	//lol refactor this idiot
+	private GameObject healCounter;
+
+	void Start() {
+		healCounter = (GameObject)Resources.Load("prefabs/UI/DamageCounter", typeof(GameObject));
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void OnTriggerStay2D(Collider2D other) {
+		Debug.Log("inside fountain! "+other.gameObject.name);
+		if(other.gameObject.name == "Player") {
+			Debug.Log("should heal");
+			GameObject damageCounterUI = (GameObject)Instantiate(healCounter, Camera.main.WorldToViewportPoint(gameObject.transform.position), Quaternion.identity);
+			damageCounterUI.guiText.text = ""+ Mathf.Ceil(20f - PlayerController.Instance.health);
+			damageCounterUI.GetComponent<DamageCounter>().isDamage = false;
+			PlayerController.Instance.health = 20f;
+		}
 	}
 }
